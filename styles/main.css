@@ -26,6 +26,7 @@ html {
 .main--heading {
     margin-bottom: 5px;
 }
+ /*
  @keyframes animation-color {
     0%, 100% {
         color: green;
@@ -37,6 +38,7 @@ html {
         color: yellow;
     }
  }
+*/
 .button {
     margin-top: 10px;
     font-weight: bold;
@@ -52,8 +54,11 @@ html {
 }
 .button:hover {
     background-color: rgba(56, 46, 40);
+    
+    /*
     animation-name: animation-color;
     animation-duration: 10s;
     animation-timing-function: linear;
     animation-iteration-count: 1;
+    */
 }
