@@ -36,9 +36,8 @@ html {
     display: inline-block;
     border-radius: 100000px;
     
-    transition: all .5s ease-in;
+    transition: all .5s ease-in .5s;
 }
 .button:hover {
     background-color: rgba(56, 46, 40);
-    color: yellow;
 }
