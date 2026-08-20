@@ -15,7 +15,12 @@
         height: 50px;
         background-color: rgb(0, 0, 0);
         width: 0;
-        transition: width 2s cubic-bezier(0, 1, 1, 0);
+        /*transition: width 2s cubic-bezier(0, 1, 1, 0);*/
+        /* SAUBER AUSGESCHRIEBEN: */
+        transition-property: width;
+        transition-duration: 2s;
+        transition-timing-function: cubic-bezier(0, 1, 1, 0);
+        transition-delay: 0s;
       }
       .outer:hover .inner {
         width: 100%;
