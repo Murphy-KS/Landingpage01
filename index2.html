@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      .outer {
+        border: 1px solid grey;
+        background-color: rgb(222, 222, 222);
+        height: 50px;
+        width: 50%;
+      }
+      .inner {
+        height: 50px;
+        background-color: rgb(0, 0, 0);
+        width: 0;
+        transition: width 2s cubic-bezier(0, 1, 1, 0);
+      }
+      .outer:hover .inner {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="inner"></div>
+    </div>
+  </body>
+</html>

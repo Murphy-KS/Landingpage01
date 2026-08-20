@@ -49,14 +49,14 @@ html {
   display: inline-block;
   border-radius: 10000000px;
 
-  transition: background-color 0.5s;
+  transition: background-color 0.5s ease-in;
   /*color 1s;*/
 }
 .button:hover {
   background-color: rgba(56, 46, 40);
-  /* color: yellow;*/
+  /* color: yellow
   transition: all 0.5;
-  /*zeile 57 sagt dass alles mit .5 sec animiert werden soll....in zeile
+  zeile 57 sagt dass alles mit .5 sec animiert werden soll....in zeile
   52 steht aber ein anderer wert. also wird beim 
   hover 57 angewandt und beim mouse-out zeile 52*/
 
