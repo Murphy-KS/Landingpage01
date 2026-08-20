@@ -8,12 +8,16 @@
       .box {
         background-color: red;
         border: 1px solid rgb(100 100 100);
-        width: 500px;
-        height: 500px;
-        animation-name: animate-box-bgcolor;
-        animation-duration: 3s;
-        animation-timing-function: linear;
-        animation-iteration-count: 1;
+        width: 250px;
+        height: 250px;
+        animation-name: animate-box-bgcolor, animate-box-position;
+        animation-duration: 10s, 10s;
+        animation-timing-function: linear, ease-in-out;
+        animation-iteration-count: 1, 1;
+        /*animation:
+          animate-box-bgcolor 10s linear infinite,
+          animate-box-position 10s ease-in-out infinite;
+      */
       }
       @keyframes animate-box-bgcolor {
         0%,
@@ -25,6 +29,17 @@
         }
         66% {
           background-color: blue;
+        }
+      }
+      @keyframes animate-box-position {
+        0% {
+          transform: translate(0px, 0px);
+        }
+        50% {
+          transform: translate(50px, 50px);
+        }
+        100% {
+          transform: translate(0px, 0px);
         }
       }
     </style>
